@@ -1,0 +1,8 @@
+com/lespinel/camel/dto/OrderRequest.class
+com/lespinel/camel/CamelKafkaApplication.class
+com/lespinel/camel/dto/OrderResponse$OrderResponseBuilder.class
+com/lespinel/camel/route/OrdersRestRouter.class
+com/lespinel/camel/route/OrdersCreationRouter.class
+com/lespinel/camel/route/OrdersConsumerRouter.class
+com/lespinel/camel/dto/OrderResponse.class
+com/lespinel/camel/service/OrderProducerService.class
