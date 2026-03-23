@@ -16,13 +16,16 @@ public class OrdersRestRouter extends RouteBuilder {
                 .description("Servicios REST para Órdenes")
                 .produces("application/json").consumes("application/json")
                 .post()
-                    // Sección de documentación OpenAPI
+                    // Inicia Sección de documentación OpenAPI (Opcional)
                     .responseMessage()
                         .code(201)
                         .message("Orden Creada Exitosamente")
                         .responseModel(OrderResponse.class)
                     .endResponseMessage()
                     .description("Creación de Órdenes")
+                    // Finaliza Sección de documentación OpenAPI (Opcional)
+                    .type(OrderRequest.class)
+                    .outType(OrderResponse.class)
                     .to("direct:handleCreateOrderRequest");
 
         from("direct:handleCreateOrderRequest")
